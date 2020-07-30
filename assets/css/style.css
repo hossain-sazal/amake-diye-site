@@ -1,0 +1,484 @@
+@font-face{
+	src: url('../fonts/georgia/georgia bold.ttf');
+	font-family: 'georgia bold';
+}
+
+@font-face{
+	src: url('../fonts/georgia/georgia bold italic.ttf');
+	font-family: 'georgia bold italic';
+}
+
+@font-face{
+	src: url('../fonts/georgia/Georgia Regular font.ttf');
+	font-family: 'Georgia Regular';
+}
+
+@font-face{
+	src: url('../fonts/georgia/GEORGIA4.TTF');
+	font-family: 'GEORGIA4';
+}
+
+/*STYLE START */
+
+/*
+=====================================
+common css
+=====================================
+*/
+.slicknav_menu{
+	display:none;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:'Georgia Regular';
+	font-size:14px;
+	color:white;
+
+	
+	background-image:url(../img/amake.png);
+	height:100vh;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.margin-b{
+	margin-bottom:20px;
+}
+.wrapper{
+	
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+/*button*/
+.our-btn {
+	padding: 17px 30px;
+	background: #4caf50;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 13px;
+	border-radius: 30px;
+	color: #fff;
+	border: 1px solid #aeaeae;
+	transition: .3s;
+}
+.our-btn:hover {
+	text-decoration: none;
+	background: #fff;
+	color: #9CC237;
+}
+.abt-btn .our-btn {
+	background: #9CC237;
+	color: #fff;
+	border: 1px solid #4caf50;
+}
+.abt-btn .our-btn:hover {
+	background: red;
+	color: #fff;
+}
+/*
+
+
+/*
+=====================================
+header area
+=====================================
+*/
+.top-bar{
+	background:#343434;
+}
+.top-content{
+	display:flex;
+	justify-content:space-between;
+}
+
+.top-left ul,
+.top-right ul{
+	display:flex;
+	margin:0;
+	padding:0;
+}
+
+.top-left ul li,
+.top-right ul li{
+	list-style:none;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size:15px;
+}
+
+.top-left ul li{
+	margin-right:25px;
+	color:#7d7d7d;
+}
+.top-left ul li i{
+	margin-right:6px;
+}
+
+.top-right ul li a{
+	margin-left:15px;
+	color:#7d7d7d;
+}
+.top-right ul li a:hover{
+	color:#fff;
+}
+
+
+
+
+/*menu area*/
+.menu-area{
+	background-color: black;
+	display:block;
+
+}
+.site-icon img{
+	width:100%;
+}
+
+
+
+.nav-bar-whole {
+	display:flex;
+	justify-content: space-between;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.navbar-nav{
+	
+}
+.nav-bar ul{
+	
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	text-align:center;
+	padding-left:20px;
+	padding-right:20px;
+	display:inline-block;
+	z-index:999;
+	
+}
+
+.nav-bar ul li{
+	margin-left:7px;
+	margin-right:7px;
+	display:block;
+	float:left;
+	position:relative;
+	z-index: 10;
+
+}
+.nav-bar ul li a{
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	background:#7B992B;
+	display:block;
+
+}
+.nav-bar ul li a:hover{
+	background:purple;
+	color:yellow;
+}
+.nav-bar ul li ul{
+	
+	padding:0;
+	margin:0;
+	position:absolute;
+	left:-999999px;
+	z-index: 2;
+
+}
+.nav-bar ul li:hover ul{
+	left:-20px;
+	display:inline-block;
+}
+
+.nav-bar ul li ul li{
+	float:none;
+	margin-top:5px;
+}
+.nav-bar ul li ul li:first-child{
+	margin-top:15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+=====================================
+carousel area
+=====================================
+*/
+
+
+.singel-carousel-item img{
+	width:100%;
+
+}
+/*carousel*/
+.carousel{
+  position: relative;
+  z-index: -1;
+  margin-bottom:20px;
+  
+  
+}
+
+
+.owl-prev {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff !important;
+  width: 50px;
+  height: 50px;
+  background: #f00 !important;
+  border-radius: 50%;
+  text-align: center;
+  display:none;
+}
+
+.owl-next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff !important;
+  width: 50px;
+  height: 50px;
+  background: #f00 !important;
+  border-radius: 50%;
+  text-align: center;
+  display:none;
+}
+.owl-nav i {
+  font-size: 30px;
+}
+
+.owl-nav button:focus{
+  outline: none;
+}
+.owl-dots{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background: #fff !important;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.owl-dots .active{
+  background: #f00 !important;
+}
+
+
+
+/*carousel end*/
+
+
+
+
+
+/*
+=====================================
+registration and video area start
+=====================================
+*/
+.reg-vid-area{
+	margin-bottom:20px;
+}
+.reg-vid-content{
+	background-color: #000;
+}
+
+
+.vid-area{
+	padding:30px;
+}
+
+.reg-area{
+	
+	text-align:center;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+.reg-text{
+	color:red;
+
+}
+
+
+
+
+
+/*
+=====================================
+engaging area start
+=====================================
+*/
+
+
+.engaging-area{
+	margin-bottom:20px;
+}
+
+.engaging-whole-content{
+	background-color: #112B3B;
+}
+
+.engaging-animate{
+	padding:30px;
+	margin:0 auto;
+}
+
+
+.engaging-animate img{
+	margin:0 auto;
+	display:flex;
+}
+
+.engaging-content{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.engaging-content h2{
+	margin-bottom:20px;
+}
+
+
+/*...............................*/
+
+
+
+
+
+/*
+=====================================
+complete area start
+=====================================
+*/
+
+.complete-area{
+	margin-bottom:20px;
+	color:#000;
+}
+
+.complete-whole-content{
+	background-color: #80B1B0 ;
+}
+
+
+.complete-whole-content .engaging-content{
+
+	text-align:center;
+}
+
+
+
+
+.........................
+
+
+
+/*
+=====================================
+success area start
+=====================================
+*/
+
+
+.success-area{
+	background-color:white;
+	margin-bottom:20px;
+}
+.success-whole-content{
+	background-color:white;
+	text-align:center;
+	margin-bottom:20px;
+	padding:30px;
+
+}
+
+
+.success-whole-content img{
+	width:100%;
+
+}
+
+
+
+
+
+
+
+/*
+=====================================
+before footer area
+=====================================
+*/
+
+.before-footer{
+	background-color:#343434;
+	padding-top:30px;
+}
+
+.bf-about  ul,
+.social ul,
+.courses ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	text-align:left;
+}
+
+.bf-about ul li a,
+ .courses ul li a,
+  .social ul li a {
+	text-decoration:none;
+	color:#3E777A;
+}
+
+.bf-about ul li a:hover,
+ .courses ul li a:hover,
+  .social ul li a:hover{
+	color:#C35911;
+  }
+
+
+/*
+=====================================
+
+=====================================
+*/
+
+
+.footer-area{
+	background: #1c1c1c;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}

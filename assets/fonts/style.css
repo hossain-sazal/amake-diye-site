@@ -1,0 +1,129 @@
+@font-face{
+	src: url('assets/fonts/georgia/georgia bold.ttf');
+	font-family: 'georgia bold';
+}
+
+@font-face{
+	src: url('assets/fonts/georgia/georgia bold italic.ttf');
+	font-family: 'georgia bold italic';
+}
+
+@font-face{
+	src: url('assets/fonts/georgia/Georgia Regular font.ttf');
+	font-family: 'Georgia Regular';
+}
+
+@font-face{
+	src: url('assets/fonts/georgia/GEORGIA4.TTF');
+	font-family: 'GEORGIA4';
+}
+
+/*STYLE START */
+
+/*
+=====================================
+common css
+=====================================
+*/
+body{
+	margin:0;
+	padding:0;
+	font-family:'Georgia Regular';
+	font-size:14px;
+	color:white;
+
+	
+	background-image:url(assets/img/amake.png);
+	height:100vh;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+
+.wrapper{
+	overflow:hidden;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+
+
+
+/*
+=====================================
+header area
+=====================================
+*/
+.top-bar{
+	background:#343434;
+}
+.top-content{
+	display:flex;
+	justify-content:space-between;
+}
+
+.top-left ul,
+.top-right ul{
+	display:flex;
+	margin:0;
+	padding:0;
+}
+
+.top-left ul li,
+.top-right ul li{
+	list-style:none;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size:15px;
+}
+
+.top-left ul li{
+	margin-right:25px;
+	color:#7d7d7d;
+}
+.top-left ul li i{
+	margin-right:6px;
+}
+
+.top-right ul li a{
+	margin-left:15px;
+	color:#7d7d7d;
+}
+.top-right ul li a:hover{
+	color:#fff;
+}
+
+
+
+
+/*menu area*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+=====================================
+
+=====================================
+*/
